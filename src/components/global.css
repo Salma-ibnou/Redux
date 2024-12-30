@@ -1,0 +1,202 @@
+table {
+  color: white !important;
+}
+.form-control {
+  border-radius: 30px !important;
+}
+
+.btn-primary {
+  border-radius: 30px;
+  background-color: #ff85d1;
+}
+
+
+/* Style général pour le fond de la page */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #4CCEFF, #3AA0F3);
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Conteneur principal */
+.main_container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* En-tête */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 50px;
+}
+
+/* Bouton Ajouter */
+button {
+  padding: 10px 20px;
+  background-color: #ff4fcf;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e942b6;
+}
+
+/* Liste des dépenses */
+.expense_list {
+  margin-top: 20px;
+}
+
+.expense_item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Total des dépenses et argent restant */
+.expense_total {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Mise en page responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Styles pour les lignes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* Éléments de colonne dans une ligne */
+.row > div {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+/* Styles de base pour les colonnes */
+.col-3,
+.col-9,
+.col-11,
+.col-12,
+.col-sm-5,
+.col-md-4,
+.col-md-6,
+.col-lg-4 {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Largeurs pour les écrans de taille standard (≥ 992px) */
+.col-3 {
+  width: 25%;  /* 3 colonnes sur 12 */
+}
+
+.col-9 {
+  width: 75%;  /* 9 colonnes sur 12 */
+}
+
+.col-11 {
+  width: 91.6667%;  /* 11 colonnes sur 12 */
+}
+
+.col-12 {
+  width: 100%;  /* 12 colonnes sur 12 (pleine largeur) */
+}
+
+.col-sm-5 {
+  width: 41.6667%; /* 5 colonnes sur 12 pour écrans ≥ 576px */
+}
+
+.col-md-4 {
+  width: 33.3333%; /* 4 colonnes sur 12 pour écrans ≥ 768px */
+}
+
+.col-md-6 {
+  width: 50%; /* 6 colonnes sur 12 pour écrans ≥ 768px */
+}
+
+.col-lg-4 {
+  width: 33.3333%; /* 4 colonnes sur 12 pour écrans ≥ 992px */
+}
+
+/* Marges de bas pour les éléments */
+.mb-2 {
+  margin-bottom: 0.5rem; /* 8px de marge en bas */
+}
+
+/* Responsive Design pour les écrans moyens (≥ 768px et < 992px) */
+@media (max-width: 992px) {
+  .col-md-4 {
+    width: 100%; /* Pleine largeur sur les écrans moyens */
+  }
+  .col-md-6 {
+    width: 100%;
+  }
+}
+
+/* Responsive Design pour les écrans petits (≥ 576px et < 768px) */
+@media (max-width: 768px) {
+  .col-sm-5 {
+    width: 100%; /* Pleine largeur sur les petits écrans */
+  }
+}
+
+/* Responsive Design pour les écrans très petits (≤ 576px) */
+@media (max-width: 576px) {
+  .col-3,
+  .col-9,
+  .col-11,
+  .col-12,
+  .col-sm-5,
+  .col-md-4,
+  .col-md-6,
+  .col-lg-4 {
+    width: 100%; /* Les colonnes prennent toute la largeur */
+    float: none;
+  }
+}
